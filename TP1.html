@@ -1,27 +1,41 @@
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP1</title>
+    <link rel="stylesheet" href="style.css">
+   
 </head>
+
 <body>
     <form action="" method="post">
-        <h1>Contact form</h1>
-        <div>
-            <label for="name">Name :</label>
-            <input type="text" name="name" id="name">
+        <h1 align="center">Contact form</h1>
+       <div class="part">
+        <div class="part1">
+            <div class="bloc">
+                <label for="name">Name </label>
+                <input type="text" name="name" id="name">
+               
+            </div>
+            <div class="bloc">
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email">
+            </div>
         </div>
-        <div>
-            <label for="email">Email :</label>
-            <input type="email" name="email" id="email">
+        <div class="part2">
+            <div class="bloc">
+                <label for="message">Message </label>
+                <textarea name="message" id="message" cols="30" rows="10"
+                    placeholder="Ecrivez ce que vous en pensez du site...."></textarea>
+            </div>
         </div>
-        <div>
-            <label for="message">Message :</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Ecrivez ce que vous en pensez du site...."></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Envoyer">
+       </div>
+        <div class="envoie">
+            <input type="submit" value="Envoyer" class="green">
+            <input type="reset" value="Annuler" class="red">
         </div>
     </form>
 </body>
+
 </html>
